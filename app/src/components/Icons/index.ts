@@ -1,0 +1,5 @@
+export * from './DocumentIcon'
+export * from './HomeIcon'
+export * from './NotificationIcon'
+export * from './SettingsIcon'
+export * from './UserIcon'
