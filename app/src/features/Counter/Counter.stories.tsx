@@ -10,9 +10,9 @@ export default {
 
 const Template: ComponentStory<typeof Counter> = () => <Counter />
 
-export const Main = Template.bind({})
+export const Default = Template.bind({})
 
-Main.play = async ({ canvasElement }) => {
+Default.play = async ({ canvasElement }) => {
   const canvas = within(canvasElement)
 
   expect(canvas.getByText('0')).toBeInTheDocument()
