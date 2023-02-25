@@ -4,6 +4,7 @@ module.exports = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
+    '@storybook/addon-docs',
     {
       name: '@storybook/addon-postcss',
       options: {
@@ -20,5 +21,6 @@ module.exports = {
   features: {
     storyStoreV7: true,
     interactionsDebugger: true
-  }
+  },
+  staticDirs: ['../public']
 }
