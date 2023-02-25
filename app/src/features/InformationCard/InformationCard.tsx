@@ -7,8 +7,8 @@ export const InformationCard = () => {
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch('https://sample.com/api')
-      const text = await response.text()
-      setData(text)
+      const json = await response.json()
+      setData(json['message'])
     }
     fetchData()
   }, [])
